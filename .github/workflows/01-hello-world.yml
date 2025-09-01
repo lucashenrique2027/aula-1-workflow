@@ -1,7 +1,7 @@
 name: Meu Primeiro Workflow de CI
 
 on:
-  push:
+  push: ${{ github.event_name }}
     branches:
       - main
   workflow_dispatch:
