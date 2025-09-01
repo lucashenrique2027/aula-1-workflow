@@ -1,7 +1,7 @@
 name: Meu Primeiro Workflow de CI
 
 on:
-  push: ${{ github.event_name }}
+  push: 
     branches:
       - main
   workflow_dispatch:
@@ -19,3 +19,5 @@ jobs:
         un: pw
       - name: Lista arquivos no runner
         run: ls -la -a
+      - name: Imprime variavel
+        run: echo "A variável de ambiente ${{ github.event_name }}"
