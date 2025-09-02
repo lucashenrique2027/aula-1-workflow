@@ -19,6 +19,6 @@ jobs:
       - name: Imprime nome do repositório
         run: echo "Nome do repositório ${{ github.repository }}"
         - name Mostra o diretório de trabalho
-    run: pwd /home/runner/work/nome-do-repositorio/nome-do-repositorio
+    run: pwd/home/runner/work/nome-do-repositorio/nome-do-repositorio
       - name Lista arquivos no diretório
     run: ls -la
