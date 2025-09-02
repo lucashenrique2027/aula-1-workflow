@@ -14,11 +14,12 @@ jobs:
     steps:
       - name: Exibe RA e Nome
         run: echo "RA 6324573 - Lucas Henrique"
+
       - name: Mostra o diretório de trabalho
         run: pwd
+
       - name: Imprime nome do repositório
-        run: echo "Nome do repositório ${{ github.repository }}"
-        - name Mostra o diretório de trabalho
-    run: pwd/home/runner/work/nome-do-repositorio/nome-do-repositorio
-      - name Lista arquivos no diretório
-    run: ls -la
+        run: echo "Nome do repositório: ${{ github.repository }}"
+
+      - name: Lista arquivos no diretório
+        run: ls -la
