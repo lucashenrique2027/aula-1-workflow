@@ -1,20 +1,39 @@
 name: Meu Primeiro Workflow de CI
 
 on:
-  push:
+  push: 
     branches:
       - main
     paths-ignore:
       - 'README.md'
-  workflow_dispatch:
+workflow_dispatch:
 
 jobs:
   meu-primeiro-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Exibe RA e Nome
+      - name: Imprime mensagem de boas-vindas
+        run: echo "Iniciando meu primeiro job!"
+      - name: Mostra o diretório de trabalho
+        run: pwd
+      - name: Lista arquivos no runner
+        run: ls -la
+      - name: Lista arquivos no runner (com -a)
+        run: ls -la -a
+      - name: Imprime variavel
+        run: echo "Uma variável de ambiente ${{ github.event_name }}"
+      - name: RA 6324573-Lucas Henrique
+        run: echo "RA 6324573-Lucas Henrique"
+        name: Exibe RA e Nome
         run: echo "RA 6324573 - Lucas Henrique"
       - name: Mostra o diretório de trabalho
         run: pwd
       - name: Imprime nome do repositório
-        run: echo "Nome do repositório: ${{ github.repository }}"
+        run: echo "Nome do repositório: ${{ github.ref }}"
+
+# Meu Primeiro Workflow de CI
+
+Este repositório contém um exemplo de pipeline de Integração Contínua usando GitHub Actions.
+
+- RA: 6324573
+- Nome: Lucas Henrique
