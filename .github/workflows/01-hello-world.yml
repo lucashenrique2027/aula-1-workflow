@@ -22,3 +22,9 @@ jobs:
         run: echo "Uma variável de ambiente ${{ github.event_name }}"
       - name: RA 6324573-Lucas Henrique
         run: echo "RA 6324573-Lucas Henrique"
+        name: Exibe RA e Nome
+        run: echo "RA 6324573 - Lucas Henrique"
+      - name: Mostra o diretório de trabalho
+        run: pwd
+      - name: Imprime nome do repositório
+        run: echo "Nome do repositório: ${{ github.repository }}"
