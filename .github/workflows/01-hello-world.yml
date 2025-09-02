@@ -23,3 +23,5 @@ jobs:
 
       - name: Lista arquivos no diretório
         run: ls -la
+        name Lista conteúdo do diretório RA
+  run: ls -la RA_6324573_Lucas_Henrique/
