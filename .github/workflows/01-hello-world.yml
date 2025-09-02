@@ -20,5 +20,5 @@ jobs:
         run: ls -la -a
       - name: Imprime variavel
         run: echo "A variável de ambiente ${{ github.event_name }}"
-        name: Imprime mensagem RA 6324573-Lucas Henrique
-        run: RA "6324573-Lucas Henrique"
+        name: RA 6324573-Lucas Henrique
+        run: echo "RA 6324573-Lucas Henrique"
