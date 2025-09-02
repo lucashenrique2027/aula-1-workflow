@@ -16,7 +16,6 @@ jobs:
         run: pwd
       - name: Lista arquivos no runner
         run: ls -la
-        un: pw
       - name: Lista arquivos no runner
         run: ls -la -a
       - name: Imprime variavel
