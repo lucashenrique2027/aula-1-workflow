@@ -21,7 +21,11 @@ jobs:
       - name: Imprime nome do repositório
         run: echo "Nome do repositório ${{ github.repository }}"
 
-      - name: Lista arquivos no diretório
+      - name: Cria diretório RA_6324573_Lucas_Henrique
+        run: mkdir RA_6324573_Lucas_Henrique
+
+      - name: Lista de arquivos no diretório
         run: ls -la
-        name Lista conteúdo do diretório RA:
+
+      - name: Lista conteúdo do diretório RA
         run: ls -la RA_6324573_Lucas_Henrique/
