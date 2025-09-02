@@ -16,9 +16,9 @@ jobs:
         run: pwd
       - name: Lista arquivos no runner
         run: ls -la
-      - name: Lista arquivos no runner
+      - name: Lista arquivos no runner (com -a)
         run: ls -la -a
       - name: Imprime variavel
-        run: echo "A variável de ambiente ${{ github.event_name }}"
-        name: RA 6324573-Lucas Henrique
+        run: echo "Uma variável de ambiente ${{ github.event_name }}"
+      - name: RA 6324573-Lucas Henrique
         run: echo "RA 6324573-Lucas Henrique"
