@@ -3,7 +3,9 @@ name: Meu Primeiro Workflow de CI
 on:
   push: 
     branches:
-      - main
+    - main       
+      - 'feature/
+      'hotfix/**' 
     paths-ignore:
       - 'README.md'
 workflow_dispatch:
