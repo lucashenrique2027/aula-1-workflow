@@ -19,7 +19,7 @@ jobs:
         run: pwd
 
       - name: Imprime nome do repositório
-        run: echo "Nome do repositório: ${{ github.repository }}"
+        run: echo "Nome do repositório ${{ github.repository }}"
 
       - name: Lista arquivos no diretório
         run: ls -la
